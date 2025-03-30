@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چت آنلاین</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex justify-center items-center min-h-screen p-4">
+<div class="w-full max-w-lg bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+    <h2 class="text-2xl font-bold mb-4 text-gray-700 text-center">چت آنلاین</h2>
+
+    <!-- شماره تلفن -->
+    <input class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right"
+           placeholder="📞 شماره تلفن" type="tel">
+
+    <!-- نوع درخواست -->
+    <select class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right">
+        <option value="" disabled selected>نوع درخواست</option>
+        <option value="support">پشتیبانی</option>
+        <option value="consultation">مشاوره خرید</option>
+        <option value="return">بازگشت کالا</option>
+        <option value="other">سایر موارد</option>
+    </select>
+
+    <!-- متن درخواست -->
+    <textarea class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right"
+              placeholder="✍️ متن درخواست"></textarea>
+
+    <!-- دکمه ارسال درخواست -->
+    <button class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition-all">
+        ارسال درخواست
+    </button>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارتباط با پشتیبانی و مشاور خرید</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        /* برای صفحات بزرگتر، اندازه باکس را تنظیم می‌کنیم */
+        @media (min-width: 1024px) {
+            .form-container {
+                max-width: 60%; /* محدود کردن عرض فرم */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex justify-center items-center min-h-screen p-4">
+<div class="form-container bg-white p-6 rounded-2xl shadow-lg border border-gray-200 w-full max-w-lg">
+    <h2 class="text-xl font-bold mb-4 text-gray-700 text-center">ارتباط با پشتیبانی و مشاور خرید</h2>
+
+    <!-- شماره تلفن -->
+    <input class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right" placeholder="📞 شماره تلفن" type="tel">
+
+    <!-- موضوع درخواست -->
+    <select class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right">
+        <option value="" disabled selected>موضوع درخواست</option>
+        <option value="consultation">مشاوره خرید</option>
+        <option value="compare-products">مقایسه دو محصول</option>
+        <option value="product-usage">کاربردهای محصول</option>
+        <option value="product-features">ویژگی‌های فیزیکی محصول</option>
+        <option value="product-specs">شناسنامه محصول (کشور سازنده، تاریخ انتشار)</option>
+    </select>
+
+    <!-- برند کالا -->
+    <select class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right">
+        <option value="" disabled selected>برند کالا</option>
+        <option value="samsung">سامسونگ</option>
+        <option value="apple">اپل</option>
+        <option value="xiaomi">شیائومی</option>
+        <option value="lg">ال‌جی</option>
+        <option value="sony">سونی</option>
+    </select>
+
+    <!-- متن سوال -->
+    <textarea class="w-full p-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-400 text-right" placeholder="✍️ سوال خود را بنویسید"></textarea>
+
+    <!-- دکمه ارسال -->
+    <button class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition-all">ارسال</button>
+</div>
+</body>
+</html>

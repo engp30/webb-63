@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هدر فروشگاهی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/cat.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/products1.css">
+    <link rel="stylesheet" href="css/banner-p.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="js/main.js">
+    <!-- افزودن Font Awesome برای استفاده از آیکون‌ها -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+
+<body class="bg-gray-100">
+
+
+<header class="bg-white shadow-md flex-auto">
+    <img src="g.webp" alt="" style="width: 100%">
+    <div class="container mx-auto px-4 lg:px-10">
+        <div class="flex justify-between items-center py-4">
+            <button id="menu-btn" class="lg:hidden text-gray-700 text-2xl hover-effect">☰</button>
+            <a href="#" class="text-2xl font-bold text-blue-600">
+                <img src="img/logo.png" alt="" style="width: 100px;margin-bottom: 10px;">
+            </a>
+            <div class="hidden lg:flex flex-1 justify-center relative">
+                <input type="text" id="search-input" placeholder="جستجو کنید..."
+                       class="w-[85%] px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300">
+                <button class="absolute right-[8.5%] top-2 text-gray-600 hover:text-blue-600">🔍</button>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="mobile-search-btn" class="lg:hidden text-gray-700 text-xl hover-effect">🔍</button>
+                <a href="#" class="text-gray-700 text-xl hover-effect">🛒</a>
+                <button id="loadPage" class="text-gray-700 text-xl hover-effect">👤</button>
+                <div id="content"></div>
+
+
+            </div>
+        </div>
+        <nav class="hidden lg:flex py-2 text-gray-700 space-x-4">
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">محصولات</a>
+            <a href="#" class="hover:text-blue-600">تخفیف‌ها</a>
+            <a href="#" class="hover:text-blue-600">تماس با ما</a>
+        </nav>
+        <nav id="mobile-menu" class="hidden flex flex-col bg-white shadow-md rounded-lg py-3 px-4 space-y-3 text-gray-700 transform -translate-x-full">
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">صفحه اصلی</a>
+            <a href="#" class="hover:text-blue-600">محصولات</a>
+            <a href="#" class="hover:text-blue-600">تخفیف‌ها</a>
+            <a href="#" class="hover:text-blue-600">تماس با ما</a>
+        </nav>
+        <div id="mobile-search-box" class="hidden px-4 pb-4 max-h-0 overflow-hidden transition-all duration-300 ease-out">
+            <input type="text" placeholder="جستجو کنید..."
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300">
+        </div>
+    </div>
+</header>
+
+
+<div class="banner-h">
+    <img class="banner" src="img/1ban.webp" alt="بنر تبلیغاتی">
+</div>
+
+
+<div class="product-box">
+    <div class="timer" style="margin-left: 15px; margin-right: 15px">
+        <img src="img/t1.svg" alt=""><br>
+        <div id="timer">00:14:00</div>
+        <img src="img/t2.svg" alt="">
+    </div>
+
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div><!-- ادامه محصولات... -->
+</div>
+
+
+<div class="circle-container">
+    <div class="circle-wrapper">
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 1">
+            <p>دسته ۱</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 1">
+            <p>دسته ۱</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 2">
+            <p>دسته ۲</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 2">
+            <p>دسته ۲</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 3">
+            <p>دسته ۳</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 4">
+            <p>دسته ۴</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 5">
+            <p>دسته ۵</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 6">
+            <p>دسته ۶</p>
+        </div>
+        <div class="circle">
+            <img src="img/i.png" alt="دسته 7">
+            <p>دسته ۷</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="product-box2">
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product2">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div><!-- ادامه محصولات... -->
+</div>
+<div class="container3">
+    <img src="img/b6.webp" alt="تصویر ۱">
+    <img src="img/b7.webp" alt="تصویر ۲">
+</div>
+<div class="container4">
+    <img src="img/b8.webp" alt="تصویر ۲">
+    <img src="img/b1.webp" alt="تصویر ۲">
+</div>
+<div class="product-box3">
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div>
+    <div class="product3">
+        <img src="img/p.webp" alt="Product 1">
+        <h3>محصول 1</h3>
+        <p class="price">۱۰۰,۰۰۰ تومان</p>
+    </div><!-- ادامه محصولات... -->
+</div>
+<footer class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <h4>پیشنهادات</h4>
+            <ul class="links">
+                <li><a href="#">محصولات ویژه</a></li>
+                <li><a href="#">تخفیفات ویژه</a></li>
+                <li><a href="#">پر فروش ترین ها</a></li>
+                <li><a href="#">برند ها</a></li>
+                <li><a href="#">دسته بندی</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>درباره ما</h4>
+            <ul class="links">
+                <li><a href="conect.html">پشتیبانی</a></li>
+                <li><a href="poshtiban-kharid.html">مشاور خرید</a></li>
+                <li><a href="tamas.html">تماس با ما</a></li>
+                <li><a href="adres.html">آدرس ما</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>
+                مارا در اینستاگرام دنبال کنید.
+            </h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center">
+        برای استفاده از مطالب پیچک، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای سید محمد صدرا تزرقی است.
+
+
+    </p>
+
+</footer>
+
+<script>
+    // باز و بسته کردن منوی موبایل
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileSearchBox = document.getElementById("mobile-search-box");
+
+    // باز و بسته کردن منوی موبایل
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("open"); // اضافه کردن کلاس open برای انیمیشن
+        mobileSearchBox.classList.add("hidden"); // بسته شدن جعبه جستجو هنگام باز شدن منو
+    });
+
+    // باز و بسته کردن جعبه جستجو
+    const mobileSearchBtn = document.getElementById("mobile-search-btn");
+    mobileSearchBtn.addEventListener("click", () => {
+        mobileSearchBox.classList.toggle("hidden");
+        mobileSearchBox.classList.toggle("open"); // اضافه کردن کلاس open برای انیمیشن
+        mobileMenu.classList.add("hidden"); // بسته شدن منو هنگام باز شدن جعبه جستجو
+    });
+
+    // بستن منو یا جعبه جستجو با کلیک خارج از آن
+    document.addEventListener("click", (event) => {
+        const isClickInsideMenu = mobileMenu.contains(event.target) || menuBtn.contains(event.target);
+        const isClickInsideSearch = mobileSearchBox.contains(event.target) || mobileSearchBtn.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickInsideSearch) {
+            mobileMenu.classList.add("hidden");
+            mobileSearchBox.classList.add("hidden");
+        }
+    });
+
+    document.getElementById("loadPage").addEventListener("click", function() {
+        // پنهان کردن دکمه
+        document.getElementById("loadPage").style.display = "none";
+
+        fetch("login.html")
+            .then(response => response.text())
+            .then(data => {
+                // ایجاد یک DOM موقت برای استخراج فقط محتوای داخل <body>
+                let tempDiv = document.createElement("div");
+                tempDiv.innerHTML = data;
+                let bodyContent = tempDiv.querySelector("body")?.innerHTML || data;
+                document.getElementById("content").innerHTML = bodyContent;
+            })
+            .catch(error => console.error("خطا در بارگیری صفحه:", error));
+    });
+
+
+</script>
+</body>
+</html>

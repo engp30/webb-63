@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه لاگین پاپ‌آپ</title>
+    <style>
+        /* استایل کلی صفحه */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* دکمه نمایش لاگین */
+        #openLogin {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* پس‌زمینه تاریک هنگام باز شدن لاگین */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه‌شفاف */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* صفحه لاگین (مودال) */
+        .login-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        /* دکمه بستن */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* جلوگیری از اسکرول صفحه اصلی هنگام باز شدن لاگین */
+        .no-scroll {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<button id="openLogin">ورود به حساب</button>
+
+<!-- پس‌زمینه تاریک و صفحه لاگین -->
+<div class="overlay" id="overlay">
+    <div class="login-box">
+        <span class="close-btn" id="closeLogin">&times;</span>
+        <h2>ورود به حساب</h2>
+        <input type="text" placeholder="نام کاربری" style="width: 100%; padding: 10px; margin: 10px 0;">
+        <input type="password" placeholder="رمز عبور" style="width: 100%; padding: 10px; margin: 10px 0;">
+        <button style="width: 100%; padding: 10px; background: #28a745; color: white; border: none; border-radius: 5px;">ورود</button>
+    </div>
+</div>
+
+<script>
+    const openLogin = document.getElementById("openLogin");
+    const overlay = document.getElementById("overlay");
+    const closeLogin = document.getElementById("closeLogin");
+
+    // باز کردن صفحه لاگین
+    openLogin.addEventListener("click", function() {
+        overlay.style.display = "flex";
+        document.body.classList.add("no-scroll"); // جلوگیری از اسکرول صفحه
+    });
+
+    // بستن صفحه لاگین با دکمه ضربدر
+    closeLogin.addEventListener("click", function() {
+        overlay.style.display = "none";
+        document.body.classList.remove("no-scroll");
+    });
+
+    // بستن صفحه لاگین با کلیک روی فضای خارجی
+    overlay.addEventListener("click", function(event) {
+        if (event.target === overlay) {
+            overlay.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }
+    });
+</script>
+
+</body>
+</html>
